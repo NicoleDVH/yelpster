@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails yelpster: development" uuid="941f9db0-5e35-40bc-b240-2570cf2d577a">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:yelpster_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails yelpster: production" uuid="eb9831ed-22cd-4b8d-87d1-6f025f2f1595">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:yelpster_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails yelpster: test" uuid="59af11a7-3c81-473b-93fe-88bcfb780b51">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:yelpster_test</jdbc-url>
+    </data-source>
+  </component>
+</project>

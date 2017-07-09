@@ -1,2 +1,8 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<h1>RESTAURANTS</h1>
+
+<% @restaurant.each do |r| %>
+  <%= r.title %>
+  <%= link_to 'Show', '#' %>
+  <%= link_to 'Edit', '#', edit_restaurant_path(restaurant) %>
+  <%= link_to 'Delete', '#', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>

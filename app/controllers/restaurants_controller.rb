@@ -15,13 +15,29 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.new(restaurant_params)
+    @restaurant = current_user.restaurants.build(restaurant_params)
 
     if @restaurant.save
       redirect_to restaurants_path
     else
       render :new
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @restaurant.update(restaurant_params)
+      redirect_to @restaurant
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @restaurant.destroy
+    redirect_to restaurants_path
   end
 
   private

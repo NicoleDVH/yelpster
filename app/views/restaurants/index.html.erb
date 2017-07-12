@@ -4,9 +4,10 @@
   <%= r.name %>
   <%= link_to 'Show', restaurant_path(r) %>
   <% if user_signed_in? %>
-	  <%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
-	  <%= link_to 'Delete', restaurant_path(@restaurant), method: :delete, data: { confirm: 'Are you sure?' } %>
+	  <%= link_to 'Edit', edit_restaurant_path(r) %>
+	  <%= link_to 'Delete', restaurant_path(r), method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
+  <br>
 <% end %>
 
 <br><br>

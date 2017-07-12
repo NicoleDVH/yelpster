@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 # OUR GEMS
 gem 'devise'
 gem 'pry-rails'
+gem 'rolify'
+gem 'cancancan'
 
 group :test, :development do
  gem "rspec-rails"
